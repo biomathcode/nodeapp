@@ -4,6 +4,7 @@
   "description": "a little test app",
   "main": "app.js",
   "dependencies": {
+    "ejs": "^2.6.2",
     "express": "^4.17.1"
   },
   "devDependencies": {},
