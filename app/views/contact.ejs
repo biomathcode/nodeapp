@@ -5,6 +5,7 @@
         body{background:skyblue; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #fff; padding: 30px;}
         h1{font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
         p{font-size: 16px; text-align: center;}
+        form{text-align:center}
         
         </style>
 
@@ -12,6 +13,15 @@
             <% include partials/nav.ejs %>
             <h1>Contact Us</h1>
             <P>Contact the collest man in the world</P>
+            <form id='contact-form' method='POST' action="/contact">
+                <label for="who">Who do you want to contact?</label>
+                <input type='text' name='who' value="<%= qs.person %>"/>
+                <label for='department'>Which department?</label>
+                <input type='text' name='department' value="<%=qs.dept %>"/>
+                <label for='email'>Your email</label>
+                <input type='email' name='email'/>
+                <input type='submit' value='submit'/>
+            </form>
         </body>
     </head>
 </html>

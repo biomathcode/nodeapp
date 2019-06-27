@@ -1,26 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-        body{background:skyblue; font-family: Verdana, Geneva, Tahoma, sans-serif;color: #fff; padding: 30px;}
-        h1{font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
-        p{font-size: 16px; text-align: center;}
-        h1{font-size: 32px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
-        li{font-size:32px;padding:5px; text-align: center;list-style-type:none}
-        
-        </style>
-
+        <link href="/assets/styles.css" rel='stylesheet' type="text/css" />
+    </head>
         <body>
             <% include partials/nav.ejs %>
-            <h1>Welcome to the profile of <%= person %></h1>
-            <P><strong>Age:</strong><%= data.age %></P>
-            <P><strong>Job:</strong><%= data.job %></P>
-            <h2>Hobbies</h2>
-            <ul>
-                <% data.hobbies.forEach(function(item){%>
-                <li><%= item %></li>
-                <% }); %>
-            </ul>
+            <h1>Welcome to the most awesome website on the net</h1>
+            <P>You won't find it any where in the world</P>
         </body>
-    </head>
+    
 </html>
